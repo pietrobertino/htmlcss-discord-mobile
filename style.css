@@ -1,5 +1,5 @@
 
-/* General style */
+/* #region general */
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +7,26 @@
 }
 
 body{
-    width: 512px;
+    
     background-image: url("./img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 512px;
+}
+
+/* #endregion general */
+
+main {
+    color:white;
+    font-family: "DM Sans", sans-serif;
+}
+
+#banner {
+    width: 100%;
+}
+
+
+
+h2 {
+    font-family: "Sigmar", sans-serif;
 }
