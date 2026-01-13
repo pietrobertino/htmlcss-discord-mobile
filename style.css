@@ -106,7 +106,7 @@ main {
     max-width: 21rem;
 }
 
-#video-demo {
+.video {
     border-radius: 2rem;
     width: 100%;
 }
