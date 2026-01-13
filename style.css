@@ -16,6 +16,7 @@ body{
 
 /* #endregion general */
 
+/*  #region structure */
 #banner {
     width: 100%;
 }
@@ -28,14 +29,20 @@ main {
     padding: 3rem;
 
 }
+/*  #endregion structure */
 
 /*  #region intro */
+
+#intro {
+    padding: 1.5rem;
+}
 
 #title{
 
     font-family: "Sigmar", sans-serif;
-    text-align: center;
+    padding: 0 1rem 0;
     line-height: 2rem;
+    text-align: center;
 
 }
 
@@ -50,6 +57,7 @@ main {
     width: 100%;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    border:0;
 }
 
 #browser-button {
@@ -57,19 +65,24 @@ main {
     padding: 1.5rem;
     width: 100%;
     font-size: 1.25rem;
-    background-color: #5865f2;
+    background-color: #3846dd;
     color:white;
+    border:0;
 }
 /* #endregion intro */
 
 /*  #region card */
 
 .card {
-    background-color:#5865f2 ;
-    padding: 3rem 2rem;
+    /* background-color:#5865f2 ; */
+    /* background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-image: linear-gradient(rgb(43, 43, 198), #5865f2);
+    padding: 3.5rem 2rem;
     border-radius: 2rem;
     position: relative;
-    margin: 2rem 0;
+    margin: 3rem 0;
 
 }
 
