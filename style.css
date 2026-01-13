@@ -29,6 +29,7 @@ main {
 
 }
 
+/*  #region intro */
 
 #title{
 
@@ -59,3 +60,41 @@ main {
     background-color: #5865f2;
     color:white;
 }
+/* #endregion intro */
+
+/*  #region card */
+
+.card {
+    background-color:#5865f2 ;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    position: relative;
+    margin: 2rem 0;
+
+}
+
+#discord-cube {
+    width: 20%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    translate: -50% -50%;
+} 
+
+.card-title {
+    font-family: "Sigmar", sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    max-width: 20rem;
+}
+
+.card-p {
+    padding: 1rem 0;
+    max-width: 21rem;
+}
+
+#video-demo {
+    border-radius: 2rem;
+    width: 100%;
+}
+/* #endregion card */
