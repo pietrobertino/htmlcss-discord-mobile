@@ -1,4 +1,6 @@
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 /* #region general */
 *{
     margin: 0;
@@ -8,25 +10,52 @@
 
 body{
     
-    background-image: url("./img/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #141f95;
     width: 512px;
 }
 
 /* #endregion general */
-
-main {
-    color:white;
-    font-family: "DM Sans", sans-serif;
-}
 
 #banner {
     width: 100%;
 }
 
 
+main {
+    
+    color:white;
+    font-family: "DM Sans", sans-serif;
+    padding: 3rem;
 
-h2 {
+}
+
+
+#title{
+
     font-family: "Sigmar", sans-serif;
+    text-align: center;
+    line-height: 2rem;
+
+}
+
+#opening-p {
+    text-align: center;
+    padding:1rem 0 1rem;
+}
+
+#download-button{
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#browser-button {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: #5865f2;
+    color:white;
 }
