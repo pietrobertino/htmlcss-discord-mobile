@@ -8,23 +8,44 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%; /* metto questa parte sempre dopo il reset in modo tale che nessuna immagine sfondi mai il file*/
+}
+
+/* Deninisco variabili:
+  in questo modo posso usare il nome di queste variabili al posto dei colori
+    usando comando var()
+    */
+
+:root {
+    --dis-bg: #191d7b;
+    --dis-btn: #5865f2;
+    --dis-card-bg: #5d64d1;
+    --dis-gradient: #2e3084;
+    --dis-white: white;
+    --dis-black: black;
+}
+
 body{
     
-    background-color: #191d7b;
+    background-color: var(--dis-bg);
     width: 512px;
+    margin: 0 auto;
 }
+
+  
 
 /* #endregion general */
 
 /*  #region structure */
 #banner {
-    width: 100%;
+    width: 100%; /*In questo modo l'immagine non sborda e sta sempre al 100% dello schermo*/
 }
 
 
 main {
     
-    color:white;
+    color:var(--dis-white);
     font-family: "DM Sans", sans-serif;
     padding: 3rem;
 
@@ -43,6 +64,8 @@ main {
     padding: 0 1rem 0;
     line-height: 2rem;
     text-align: center;
+    /* Volendo, invece che scrivere direttamente il titolo in maiuscolo 
+    potevo lasciarlo in minuscolo e usare text-transfrom: uppercase; */
 
 }
 
@@ -52,22 +75,24 @@ main {
 }
 
 #download-button{
+    display: block;
     border-radius: 1.5rem;
-    padding: 1.5rem;
-    width: 100%;
+    padding: 1.5rem; 
+    width: 100%; 
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    border:0;
+    border:none;
 }
 
 #browser-button {
+    display: block;
     border-radius: 1.5rem;
     padding: 1.5rem;
     width: 100%;
     font-size: 1.25rem;
-    background-color: #5865f2;
-    color:white;
-    border:0;
+    background-color: var(--dis-btn);
+    color:var(--dis-white);
+    border:none;
 }
 /* #endregion intro */
 
@@ -78,7 +103,7 @@ main {
     /* background-image: url(./img/background.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-image: linear-gradient(rgb(43, 43, 198), #5d64d1);
+    background-image: linear-gradient(var(--dis-gradient), var(--dis-card-bg));
     padding: 3.5rem 2rem;
     border-radius: 2rem;
     position: relative;
